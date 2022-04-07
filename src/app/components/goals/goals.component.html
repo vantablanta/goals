@@ -1,0 +1,13 @@
+<h1>Goals For The Day </h1>
+
+<p *ngFor="let goal of goals" >{{goal.id}} {{goal.name}}
+    <!-- <button (click)='toggleDetails(index)'>Toggle Details</button> -->
+    <app-goal-detail></app-goal-detail>
+</p>
+<!-- *ngIf='goal.showDescription'  
+        [goaldetail] = goals 
+        (isComplete)='completeGoal($event, index)' -->
+
+
+
+<p *ngIf="goals.length > 5"> WE HAVE MANY GOALS AND LITTLE TIME</p>
